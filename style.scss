@@ -28,6 +28,39 @@ body {
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
+
+  @media (min-width: 992px){
+          width: 66.66666667%;
+
+  }
+
+}
+
+aside{
+
+      @media (min-width: 992px){
+          width: 33.33333333%;
+
+  }
+
+
+.user img {
+  margin-right: 10px;
+  border-radius: 25px;
+}
+p.tweet {
+  margin-top: 10px;
+}
+.authorbox_author_image {
+  float: left;
+  margin-right: 10px;
+}
+.authorbox_author_title {
+  margin-top: 10px;
+  position: relative;
+  display: inline-block;
+}
+
 }
 
 h1, h2, h3, h4, h5, h6 {
