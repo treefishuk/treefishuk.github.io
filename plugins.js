@@ -97,7 +97,7 @@ function handleTweets(tweets){
     var element = document.getElementById('tweets-wrapper');
     var html = '';
     while(n < x) {
-      html += '<div class="panel panel-default"><div class="panel-body">' + tweets[n] + '</div></div>';
+      html += '<div class="panel">' + tweets[n] + '</div>';
       n++;
     }
     element.innerHTML = html;

@@ -320,3 +320,13 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+
+.panel{
+
+    padding: 20px;
+    border: 1px solid #EFEFEF;
+    margin-bottom: 10px;
+    border-radius: 4px;
+
+}
