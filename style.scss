@@ -25,7 +25,6 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
   padding: 0 10px;
   width: 100%;
 
@@ -64,15 +63,6 @@ aside{
 
 
 
-.cf:before,
-.cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.cf:after {
-    clear: both;
-}
 
 .user img {
   margin-right: 10px;
@@ -204,6 +194,19 @@ img {
 .clearfix:after {
     clear: both;
 }
+
+
+
+.container:before,
+.container:after {
+    content: " ";
+    display: table;
+}
+
+.container:after {
+    clear: both;
+}
+
 
 /*********************/
 /* LAYOUT / SECTIONS */
