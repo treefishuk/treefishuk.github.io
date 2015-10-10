@@ -46,6 +46,7 @@ main{
   @media (min-width: 992px){
           width: 66.66666667%;
           float: left;
+              padding-right: 30px;
   }
 
 }
@@ -255,7 +256,9 @@ img {
   @include mobile {
     float: none;
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
+      line-height: 20px;
+
   }
 }
 
