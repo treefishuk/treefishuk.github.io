@@ -30,13 +30,23 @@ body {
   width: 100%;
 
 
+@media (min-width: 768px){
+    width: 750px;
+}
+@media (min-width: 992px){
+    width: 970px;
+}
+@media (min-width: 1200px){
+
+    width: 1170px;
+}
 
 }
 
 main{
   @media (min-width: 992px){
           width: 66.66666667%;
-
+          float: left;
   }
 
 }
@@ -48,6 +58,7 @@ aside{
 
       @media (min-width: 992px){
           width: 33.33333333%;
+          float: left;
 
   }
 
