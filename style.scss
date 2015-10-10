@@ -327,13 +327,11 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+    border: 1px solid #EFEFEF;
+    border-radius: 4px;
+
 }
 
-.posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
-}
 
 .post {
   blockquote {
@@ -368,7 +366,7 @@ nav {
     border-color: #dddddd;
     margin: 0;
     padding: 5px 15px;
-    border-radius: 5px 5px 0 0;
+    border-radius: 4px 4px 0 0;
     font-size: 23px;
   }
 
