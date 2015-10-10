@@ -54,34 +54,42 @@ main{
 
 
 
-aside{
+aside {
 
-      @media (min-width: 992px){
-          width: 33.33333333%;
-          float: left;
-
-  }
-
+    @media (min-width: 992px) {
+        width: 33.33333333%;
+        float: left;
+    }
 
 
 
-.user img {
-  margin-right: 10px;
-  border-radius: 25px;
-}
-p.tweet {
-  margin-top: 10px;
-}
-.authorbox_author_image {
-  float: left;
-  margin-right: 10px;
-}
-.authorbox_author_title {
-  margin-top: 10px;
-  position: relative;
-  display: inline-block;
-}
 
+    .user img {
+        margin-right: 10px;
+        border-radius: 25px;
+    }
+
+    p.tweet {
+        margin-top: 10px;
+
+        a {
+            -ms-word-break: break-all;
+            word-break: break-all;
+        }
+    }
+
+
+
+    .authorbox_author_image {
+        float: left;
+        margin-right: 10px;
+    }
+
+    .authorbox_author_title {
+        margin-top: 10px;
+        position: relative;
+        display: inline-block;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -314,6 +322,9 @@ nav {
 // .main
 //
 
+
+
+
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
@@ -342,6 +353,21 @@ nav {
     text-transform: uppercase;
     font-size: 15px;
   }
+
+
+  h1{
+
+    color: #999999;
+    background-color: #f5f5f5;
+    border-color: #dddddd;
+  }
+
+
+  .entry{
+
+    padding: 20px;
+  }
+
 }
 
 .wrapper-footer {
