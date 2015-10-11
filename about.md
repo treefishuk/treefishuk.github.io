@@ -4,11 +4,25 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hi! I'm jon, a Web Devloper working in Bridgend for a great company called [Comgem](comgem.com). 
 
-### More Information
+Before I joined Comgem I was a Mac guy and built PHP/Wordpress sites. I have now joined the darkside and moved to Windows land and use C# and ASP MVC and Webforms on a daily basis.
 
-A place to include any other types of information that you'd like to include about yourself.
+Having transitioned from Mac to Windows, from PHP to C# and Wordpres to Umbraco I am going to try and write the occasional article to help anyone who has been in a similar position to me, and point people in the direction for useful tools and tips. 
+
+### Projects
+
+[SQuery](http://treefishuk.github.io/SQuery)
+This is a flat out light weight alternative to JQuery I put together.
+
+### Skills
+
+* HTML5
+* CSS3
+* Javascript
+* C#
+* ASP MVC
+* Webforms
 
 ### Contact me
 
