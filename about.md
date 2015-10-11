@@ -8,7 +8,7 @@ Hi! I'm jon, a Web Devloper working in Bridgend for a great company called [Comg
 
 Before I joined Comgem I was a Mac guy and built PHP/Wordpress sites. I have now joined the darkside and moved to Windows and use C# and ASP MVC and Webforms on a daily basis.
 
-Having transitioned from Mac to Windows, from PHP to C# and Wordpres to Umbraco I am going to try and write the occasional article to help anyone who is in a similar position to me. This site will hopefully point people in the direction for useful tools and tips, and may be even provide some of its own.
+This site will hopefully point you in the direction of useful tools and tips, and maybe even provide some of its own.
 
 ### Projects
 
