@@ -28,7 +28,7 @@ DNS stuff is is limited to the amount of searches you can do on a domain without
 
 There is also a paid subscription service you can sign up to that monitors a domain against Spam databases so you can get notified if your domain gets listed as Spam, as well as a domain monitoring service that reports any DNS issues that occur.
 
-###intodns
+###intoDNS
 
 IntoDNS is very simple to use. Unlike MXToolbox and DNS Stuff where there are various different tools and checks you can run, IntoDNS is just one test. The test is very similar to the 'Do I have DNS problems?' tool in DNS Stuff. There are a few different things however that get highlighted using this tool.
 
