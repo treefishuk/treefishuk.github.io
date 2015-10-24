@@ -3,7 +3,7 @@ layout: post
 title: Why I choose to ditch JQuery
 --- 
 
-For projects I work on from this point on I am going to (where possible) ditch JQuery. There are three big factors which made me come to this decision. They are:
+For projects I work on from this point on I am going to (where possible) ditch JQuery. There are three big factors which made me come to this decision. They are...
 
 *Size
 *Speed
