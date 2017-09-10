@@ -3,8 +3,6 @@ layout: post
 title: Top 10 Nuget Packages for ASP MVC - AutoMapper
 --- 
 
-# Top 10 Nuget Packages for ASP MVC : AutoMapper
-
 Over the past few years building ASP MVC solutions there have been moments when I thought...
 
 > "How did I not know about this!!!??"  
