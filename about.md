@@ -6,9 +6,9 @@ permalink: /about/
 
 Hi! I'm Jon, a Web Devloper working in Bridgend for a great company called [Comgem](comgem.com). 
 
-Before I joined Comgem I was a Mac guy and built PHP/Wordpress sites. I have now joined the darkside and moved to Windows and use C# and ASP MVC and Webforms on a daily basis.
+I have been buiding ASP MVC websites for a few years now and I am using this blog to document the stuff I have found usefull. 
 
-This site will hopefully point you in the direction of useful tools and tips, and maybe even provide some of its own.
+If you have stumbled onto this blog hopefully you will find something usefull for you too.  
 
 ### Projects
 
@@ -22,7 +22,6 @@ This is a light weight alternative to JQuery I put together.
 * Javascript
 * C#
 * ASP MVC
-* Webforms
 
 ### Contact me
 
