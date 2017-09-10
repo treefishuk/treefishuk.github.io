@@ -225,7 +225,7 @@ This will grab only the required data in a single Select statement and is the bi
 
 If you use a single file for your mappings the file can get huge and messy very quickly. 
 
-I would recomend a sinlge mapping file per entity.
+I would recomend a single mapping file per entity.
 
 For Example : 
 
