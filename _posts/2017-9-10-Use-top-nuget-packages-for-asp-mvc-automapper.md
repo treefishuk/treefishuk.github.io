@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Top 10 Nuget Packages for ASP MVC : AutoMapper
+title: Top 10 Nuget Packages for ASP MVC - AutoMapper
 --- 
 
 # Top 10 Nuget Packages for ASP MVC : AutoMapper
