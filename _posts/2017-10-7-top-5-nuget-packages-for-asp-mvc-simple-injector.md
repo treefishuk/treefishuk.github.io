@@ -3,17 +3,12 @@ layout: post
 title: Top 5 Nuget Packages for ASP MVC - Simple Injector
 --- 
 
-Over the past few years building ASP MVC solutions there have been moments when I thought...
-
-> "How did I not know about this!!!??"  
-
-So I am doing a series on nuget packages for ASP MVC 5 solutions that I wish I had known about long ago that would have made my life a lot easier. 
+This is entry number 3 of the top 5 nuget packages for ASP MVC 5 applications.
 
 Previously entries in this list include:
 
 1. [Automapper](/top-5-nuget-packages-for-asp-mvc-automapper).
 2. [Lambda Expression Helpers](/top-5-nuget-packages-for-asp-mvc-lambda-expression-helpers).
-
 
 Next up is..
 

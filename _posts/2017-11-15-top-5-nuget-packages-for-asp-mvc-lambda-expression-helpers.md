@@ -3,11 +3,7 @@ layout: post
 title: Top 5 Nuget Packages for ASP MVC - Lambda Expression Helpers
 --- 
 
-Over the past few years building ASP MVC solutions there have been moments when I thought...
-
-> "How did I not know about this!!!??"  
-
-So I am doing a series on nuget packages for ASP MVC 5 solutions that I wish I had known about long ago that would have made my life a lot easier. 
+Continuing the series on great nuget packages for ASP MVC 5 solutions that I wish I had known about.
 
 Previously entries in this list include:
 
