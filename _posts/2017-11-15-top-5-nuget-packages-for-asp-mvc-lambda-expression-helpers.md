@@ -14,9 +14,7 @@ Next up is..
 # Lambda Expression Helpers
  
 ```
-
 Install-Package System.Web.Mvc.Expressions
-
 ```
 
 ## What does it do?
@@ -61,16 +59,13 @@ Everything complies no errors will be thrown but when the user clicks on the lin
 Givent he example above instead of using:
 
 ```
-
 @Html.ActionLink("News", "Index", "News")
-
 ```
 
 You could use:
 
 ```
 @Html.ActionLink<NewsController>("News", c => c.Index())
-
 ```
 
 This way if the controller gets renamed or the requirements of the index method change and the views are compiled on build there will be build errors to help you catch these kinds of problems.
@@ -84,14 +79,11 @@ Doing a redirect after posting a form? Instead of using:
 
 ```
     return RedirectToAction("Index", "Home");
-
 ```
 
 You can use:
 ```
-
     return RedirectToAction<HomeController>(c => c.Index())
-
 ```
 
 # Next Time

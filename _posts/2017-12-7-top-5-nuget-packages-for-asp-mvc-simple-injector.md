@@ -15,9 +15,7 @@ Next up is..
 # Simple Injector
  
 ```
-
 Install-Package SimpleInjector
-
 ```
 
 ## What does it do?
@@ -71,7 +69,6 @@ public BooksContoller : Controller
     }
 
 }
-
 ```
 
 As you can see with the first example there is a hard dependancy on "Bookservice". You end up with tightly coupled classes breaking SOLID principles. The second example shows how the controller is passed a class that implements IBookService. A class that implements IBookService is defined in the Simple Injector configuration and that class will be used. The class doesnt know what that class will be just that it will conform to the promises the implementation promises thatthe interface defines.
@@ -93,7 +90,6 @@ container.Register<IAnotherService, AnotherService>();
 Intead you can scan assemblies and auto register implementations  :
 
 ```
-
 var myAssembly = typeof(someclass).Assembly;
 
 var registrations =
@@ -104,7 +100,6 @@ var registrations =
 foreach (var reg in registrations) {
     container.Register(reg.Service, reg.Implementation, Lifestyle.Transient);
 }
-
 ```
 
 ## 2. Start-up Actions
@@ -113,20 +108,16 @@ foreach (var reg in registrations) {
 If you want a bunch of things to run on application start up you can create an Interface such as:
 
 ```
-
     public interface IStartUpAction
     {
         void Execute();
     }
-
 ```
 
 You can then register all classes that implement that interface:
 
 ```
-
     container.Collection.Register(typeof(IStartUpAction), localAssemblies);
-
 ```
 
 And then in startup execute all the classes that implement the given interface.
