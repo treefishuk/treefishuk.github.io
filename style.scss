@@ -368,11 +368,15 @@ nav {
     .read-more {
         text-transform: uppercase;
         font-size: 15px;
-        background: #407742;
+        background: #79947a;
         padding: 8px 10px;
         color: #fff;
         border-radius: $border-radius;
         display: inline-block;
+
+        &:hover {
+            background: #407742;
+        }
     }
 
 
