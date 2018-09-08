@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Top 3 Visual Studio Extensions for Visual Studio
+title: Top 3 Visual Studio Extensions for Web Developers
 --- 
 
 As a web developer a lot of my time is spent in visual studio. So here is my top 3 Extensions that I think every web developer should have installed in visual studio.
