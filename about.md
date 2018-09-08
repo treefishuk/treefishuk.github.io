@@ -14,7 +14,7 @@ If you have stumbled onto this blog hopefully you will find something usefull fo
 This is a light weight alternative to JQuery I put together.
 
 [Nomoni](https://treefish.uk/nomoni/)
-This is some Nuget packagesI put together to build modular .Net Core Apps. Based on the ExtCore framework but simplified and some what I beleieve to be feature improvements.
+This is some Nuget packages I put together to build modular .Net Core Apps. Based on the ExtCore framework but simplified and some what I beleieve to be feature improvements.
 
 ### Skills
 
