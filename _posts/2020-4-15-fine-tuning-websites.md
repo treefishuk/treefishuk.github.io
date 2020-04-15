@@ -15,9 +15,9 @@ Tells you if the HTML on a website page is valid.
 
 If a page has invalid HTML your page may get rendered incorrectly on less intelligent browsers or older devices. Invalid HTML is unlikely to affect search engine ranking though according to google:
 
-https://support.google.com/webmasters/answer/100782
+[https://support.google.com/webmasters/answer/100782](https://support.google.com/webmasters/answer/100782)
 
-# [2. W3C CSS Validator](https://jigsaw.w3.org/css-validator/ )
+# [2. W3C CSS Validator](https://jigsaw.w3.org/css-validator)
  
 ## What does it do?
 
@@ -39,7 +39,7 @@ As an example [this website](https://developers.google.com/speed/pagespeed/insig
 
 If your website takes a long time to load people will get board or frustrated and go elsewhere. If you want to retain interest in your site content that content needs to be delivered quickly. Not only that but the time it takes for your site to load also effects your google search engine ranking. For further reading here is a good article on how pagespeed affects conversion rates:
 
-- https://blog.hubspot.com/marketing/page-load-time-conversion-rates 
+[https://blog.hubspot.com/marketing/page-load-time-conversion-rates](https://blog.hubspot.com/marketing/page-load-time-conversion-rates)
 
 
 # [4. Chrome Dev Tools - Device Mode](https://developers.google.com/web/tools/chrome-devtools/device-mode/)
