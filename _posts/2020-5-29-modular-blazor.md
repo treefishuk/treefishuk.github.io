@@ -48,11 +48,11 @@ So you can use the "AdditionalAssemblies" parameter to point to a method which s
 </Router>
 ```
 
-## Show me the code (give me a demo to play with)
+## Show me the code!!! (where is the demo to play with?)
 
 I have set up an example with two test modules on github which you can download/fork: 
 
-https://github.com/treefishuk/ModularBlazor
+[https://github.com/treefishuk/ModularBlazor](https://github.com/treefishuk/ModularBlazor)
 
 If you are not a fan of the Assembly scanning code an alternative would be Scrutor: 
 
