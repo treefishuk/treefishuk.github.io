@@ -3,9 +3,6 @@ layout: post
 title: Modular Blazor
 --- 
 
-
-# Modular Blazor
-
 Blazor is great. It's the new shiny. It enables the creation of client web apps by people who are good with C# and HTML. It's for people who don't want to have to learn Angular, React *[insert latest JavaScript SPA framework or preference here]* to create modern user friendly responsive interfaces, but use what they know. 
 
 Read up all about it [On Microsofts Site]([https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)
