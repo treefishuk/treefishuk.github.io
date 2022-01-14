@@ -415,10 +415,12 @@ footer {
 
 table thead {
     background:#555;
+    color: #fff;
 }
 
 table td, table th {
-    padding: 0.5rem 0;
+    padding: 0.5rem 0.5rem;
+    text-align: left;
 }
 
 table tr:nth-child(2n) {

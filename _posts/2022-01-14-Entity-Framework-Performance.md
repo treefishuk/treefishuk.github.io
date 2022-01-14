@@ -79,15 +79,6 @@ To run the tests you will need to :
 
 ## Analysing the results
 
-- Retrieve all books
-- Retrieve all books, using "No Tracking"
-- Retrieve all books, including the author info, using an Include
-- Retrieve all books, including the author info, projected to a DTO
-- Retrieve all books, including the author info, projected to a DTO, using "No Tracking"
-- Retrieve all books, including the author info, using an Include, Ordered By Author
-- Retrieve all books, including the author info, projected to a DTO, Ordered By Author
-- Retrieve all books, including the author info, projected to a DTO, using "No Tracking", Ordered By Author
-
 ### Retrieve all books
 
 - EF Core 3 was 68% faster then Entity Framework 6
