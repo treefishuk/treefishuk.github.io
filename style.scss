@@ -412,3 +412,15 @@ footer {
     margin-bottom: 10px;
     border-radius: $border-radius;
 }
+
+table thead {
+    background:#555;
+}
+
+table td, table th {
+    padding: 0.5rem 0;
+}
+
+table tr:nth-child(2n) {
+    background-color: #f2f2f2;
+}
