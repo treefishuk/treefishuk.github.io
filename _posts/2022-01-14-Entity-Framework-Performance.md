@@ -3,8 +3,6 @@ layout: post
 title: Entity Framework 6 vs EF Core 6 Query Performance
 --- 
 
-# EF6 vs EFCore6 Query Performance
-
 Should you upgrade your project from a Net Framework application using Entity Framework 6 to a Net 6 application using EF Core 6? One of the biggest decisions as to whether you would go down this route which may require a serious investment of time is; will there be a performance benefit?
 
 ## Why Performance Matters
