@@ -20,7 +20,7 @@ Most decent websites now support MFA, some refer to it as 2FA (two factor authen
 If you don't always get the best phone signal or you get fed up waiting for a text to turn up, you can often use an authenticator app that generates the code instead. I find this much more convenient. There are several apps available you can use:
 
 - [Authy](https://authy.com)
-- [Microdoft Authenticator](https://support.microsoft.com/en-gb/account-billing/download-and-install-the-microsoft-authenticator-app-351498fc-850a-45da-b7b6-27e523b8702a)
+- [Microsoft Authenticator](https://support.microsoft.com/en-gb/account-billing/download-and-install-the-microsoft-authenticator-app-351498fc-850a-45da-b7b6-27e523b8702a)
 - [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en&co=GENIE.Platform%3DiOS&oco=1)
 
 ## 2. Use a Password Manager
