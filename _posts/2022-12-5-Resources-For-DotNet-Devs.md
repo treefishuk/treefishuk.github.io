@@ -26,3 +26,6 @@ Nick showcases practical tools, techniques and patterns, that often make me reth
 
 ### [Code Opinion](https://www.youtube.com/@CodeOpinion)
 Code opinion is a great channel with Derek Comartin discussing coding patterns and providing practical examples of clean coding. Lots of good stuff on Domain driven design, CQRS and message queues. 
+
+### [.NET](https://www.youtube.com/@dotnet)
+A channel from Microsoft. Great for 101  tutorial videos and the best place to catch up on Keynotes and sessions from .Net Conf.
