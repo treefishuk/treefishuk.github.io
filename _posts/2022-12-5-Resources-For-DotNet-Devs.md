@@ -19,4 +19,7 @@ Chris Alcock produces a curated list of awesome blog articles for dotnet devs mo
 ### [C# Digest](https://csharpdigest.net/)
 Abother curated list of awesome blog articles for dotnet devs, this one produced on a weekly bases. You can have the list e-mailed out to you or subscribe to the RSS feed. 
 
+## YouTube Channels
 
+### [Nick Chapsas](https://www.youtube.com/@nickchapsas)
+Nick showcases practical tools, techniques and patterns, that often make me rethink my approach to the way I code. Well worth subscribing.
