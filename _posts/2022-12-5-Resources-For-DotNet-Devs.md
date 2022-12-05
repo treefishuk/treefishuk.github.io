@@ -17,6 +17,6 @@ So many of the tools and techniques I use on a daily basis I first heard about o
 Chris Alcock produces a curated list of awesome blog articles for dotnet devs most days. There are a lot of blogs out there but Chris consistantly seems to find the best stuff to list. 
 
 ### [C# Digest](https://csharpdigest.net/)
-Similar to the Morning Brew but produced on a weekly bases. You can have the list e-mailed out to you or subscribe to the RSS feed. 
+Abother curated list of awesome blog articles for dotnet devs, this one produced on a weekly bases. You can have the list e-mailed out to you or subscribe to the RSS feed. 
 
 
