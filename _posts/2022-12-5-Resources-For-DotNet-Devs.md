@@ -25,4 +25,4 @@ Abother curated list of awesome blog articles for dotnet devs, this one produced
 Nick showcases practical tools, techniques and patterns, that often make me rethink my approach to the way I code. Well worth subscribing.
 
 ### [Code Opinion](https://www.youtube.com/@CodeOpinion)
-Code opinion is a great channel with Derek Comartin discussing coding patterns and providing practical examples of clean coding. Lots of good stuff on Domain driven design, CQRS and messaging. 
+Code opinion is a great channel with Derek Comartin discussing coding patterns and providing practical examples of clean coding. Lots of good stuff on Domain driven design, CQRS and message queues. 
