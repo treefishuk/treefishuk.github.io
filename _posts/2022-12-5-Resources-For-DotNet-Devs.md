@@ -10,11 +10,11 @@ If you are new to dotnet, or want to stay up to date with what is going on in an
 Believe me when I say if you do nothing else in this article, you should subscribe to:
 
 ### [DotNetRocks!](https://www.dotnetrocks.com/) 
-So many of the tools and techniques I use on a daily basis I first heard about on this show. Carl and Richard are wonderful hosts and the show is fantastic. The "better know a framework" segment, with its wonderfully bonkers intro has sent me down many a rabit hole of discovery. Carl also has a security podcast called "Security this Week" which is incredibly entertaining, and Richard does a podcast that is more targetted toward IT system admins called "Run as Radio", both of which are also worth checking out. 
+So many of the tools and techniques I use on a daily basis I first heard about on this show. Carl and Richard are wonderful hosts and the show is fantastic. The "better know a framework" segment, with its wonderfully bonkers intro has sent me down many a rabit hole of discovery. Carl also has a security podcast called "Security this Week" which is incredibly entertaining, and Richard does a podcast that is more targetted towards IT system admins called "Run as Radio", so check thoose out too. 
 
 ## Blogs
 
-There are loads of blogs for dot net devs out there, including various blogs produced by Microsoft and the Visual Studio team. As a starting point tho, I would recomend the following:
+There are loads of blogs for dotnet devs out there, including various blogs produced by Microsoft and the Visual Studio team. As a starting point tho, I would recomend the following:
 
 ### [The Morning Brew](https://blog.cwa.me.uk/)
 Chris Alcock produces a curated list of awesome blog articles for dotnet devs most days. There are a lot of blogs out there, but Chris consistantly seems to find the best stuff to share. 
