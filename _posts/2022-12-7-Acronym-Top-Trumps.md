@@ -50,4 +50,4 @@ After spending a few years coding in the .NET space you will invariably collect 
 
  ## CQRS (Comand Query Response Segregation)
 
-## DDD (Domain Driven Design)
+ ## DDD (Domain Driven Design)
