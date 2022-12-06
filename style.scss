@@ -18,9 +18,9 @@ html {
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+    background: $white;
+    font: 1.1em $font-stack;
+    color: $darkGray;
 }
 
 .container {
@@ -96,41 +96,41 @@ aside {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
-  font-weight: bold;
+    font-family: $font-stack;
+    color: $darkerGray;
+    font-weight: bold;
+    line-height: 1.7;
+    margin: 0.7em 0 0.7em 0;
+    padding: 0;
 
-  line-height: 1.7;
-  margin: 1em 0 15px;
-  padding: 0;
-
-  @include mobile {
-    line-height: 1.4;
-  }
+    @include mobile {
+        line-height: 1.4;
+    }
 }
 
 h1 {
-  font-size: 30px;
-  a {
-    color: inherit;
-  }
+    font-size: 2.3em;
+
+    a {
+        color: inherit;
+    }
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 2.1em;
 }
 
 h3 {
-  font-size: 20px;
+    font-size: 1.8em;
 }
 
 h4 {
-  font-size: 18px;
-  color: $gray;
+    font-size: 1.6em;
+    color: $gray;
 }
 
 p {
-  margin: 15px 0;
+    margin: 0 0 1rem 0;
 }
 
 a {
@@ -277,7 +277,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $font-stack;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -296,7 +296,7 @@ img {
 nav {
   float: right;
       margin-top: 47px;
-  font-family: $helveticaNeue;
+  font-family: $font-stack;
   font-size: 18px;
 
 
@@ -333,16 +333,21 @@ nav {
     border: 1px solid #EFEFEF;
     border-radius: $border-radius;
     margin-bottom: 30px;
-
+    overflow: hidden;
 
     h1 {
         color: #777;
         background-color: #f5f5f5;
-        border-color: #dddddd;
-        margin: 0;
-        padding: 5px 15px;
+        border-color: #f5f5f5;
+        padding: 0.6rem 1rem;
         border-radius: $border-radius $border-radius 0 0;
-        font-size: 23px;
+        font-size: 1.2em;
+
+        small {
+            font-size: 0.8em;
+            float: right;
+            margin-top: 0.2rem;
+        }
     }
 
     .entry {
@@ -357,7 +362,6 @@ nav {
         border-left: 2px solid $gray;
         padding: 0.1em 1em;
         color: $gray;
-        font-size: 22px;
         font-style: italic;
     }
 
@@ -366,13 +370,12 @@ nav {
     }
 
     .read-more {
-        text-transform: uppercase;
-        font-size: 15px;
         background: #659066;
-        padding: 8px 10px;
+        padding: 8px 14px;
         color: #fff;
-        border-radius: $border-radius;
+        border-radius: 7px;
         display: inline-block;
+        margin-top: 1rem;
 
         &:hover {
             background: #407742;
