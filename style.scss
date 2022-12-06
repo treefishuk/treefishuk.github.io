@@ -18,9 +18,9 @@ html {
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+    background: $white;
+    font: 1em $font-stack;
+    color: $darkGray;
 }
 
 .container {
@@ -96,37 +96,37 @@ aside {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $font-stack;
-  color: $darkerGray;
-  font-weight: bold;
+    font-family: $font-stack;
+    color: $darkerGray;
+    font-weight: bold;
+    line-height: 1.7;
+    margin: 1em 0 1em 0;
+    padding: 0;
 
-  line-height: 1.7;
-  margin: 0 0 1rem 0;
-  padding: 0;
-
-  @include mobile {
-    line-height: 1.4;
-  }
+    @include mobile {
+        line-height: 1.4;
+    }
 }
 
 h1 {
-  font-size: 30px;
-  a {
-    color: inherit;
-  }
+    font-size: 2.3em;
+
+    a {
+        color: inherit;
+    }
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 2.1em;
 }
 
 h3 {
-  font-size: 20px;
+    font-size: 1.8em;
 }
 
 h4 {
-  font-size: 18px;
-  color: $gray;
+    font-size: 1.6em;
+    color: $gray;
 }
 
 p {
