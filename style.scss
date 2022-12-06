@@ -342,6 +342,12 @@ nav {
         padding: 0.6rem 1rem;
         border-radius: $border-radius $border-radius 0 0;
         font-size: 1.2em;
+
+        small {
+            font-size: 0.8em;
+            float: right;
+            margin-top: 0.2rem;
+        }
     }
 
     .entry {
