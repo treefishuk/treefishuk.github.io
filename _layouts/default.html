@@ -15,22 +15,26 @@
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container cf">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+      <div id="fb-root"></div>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0&appId=1364289977641095&autoLogAppEvents=1" nonce="VZZTokXd"></script>
 
-          <div class="site-info">
-            <p class="site-description">{{ site.description }}</p>
+
+      <div class="wrapper-masthead">
+          <div class="container cf">
+              <header class="masthead clearfix">
+                  <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+
+                  <div class="site-info">
+                      <p class="site-description">{{ site.description }}</p>
+                  </div>
+
+                  <nav>
+                      <a href="{{ site.baseurl }}/">Blog</a>
+                      <a href="{{ site.baseurl }}/about">About</a>
+                  </nav>
+              </header>
           </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
       </div>
-    </div>
 
       <div class="container">
 
@@ -41,15 +45,15 @@
 
 
 
-    <div class="wrapper-footer">
-      <div class="container"> 
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
+      <div class="wrapper-footer">
+          <div class="container">
+              <footer class="footer">
+                  {% include svg-icons.html %}
+              </footer>
+          </div>
       </div>
-    </div>
 
-    {% include analytics.html %}
-      <script src="/plugins.js"></script>
+      {% include analytics.html %}
+
   </body>
 </html>
