@@ -8,7 +8,7 @@ After spending a few years coding in the .NET space you will invariably collect 
  - Simplicity (how easy is it to explain it to somone who is new at coding)
  - Co-operation (how well does it play with the other acronyms)
 
- ## SOC (Seperation of concerns)
+## SOC (Seperation of concerns)
 
  Seperation of concerns is about keeping code files restricted to a single context. Database interaction code should stay seperate from business logic code, which should be seperate from UI code. Can result in things like N-Tier applications.
 
@@ -54,11 +54,13 @@ CQRS in my view is very practical and I wish I had paid more attention to it whe
 
 
 **Before CQRS:**
+
+```
 ├── src
 │   ├── Validators
 │   │   ├── ProductValidator.cs
 │   │   ├── OtherValidator.cs
-│   │   │   ├── OtherValidator.cs
+│   │   ├── OtherValidator.cs
 │   │   ├── OtherValidator.cs
 │   ├── Services
 │   │   ├── ProductService.cs
@@ -77,10 +79,11 @@ CQRS in my view is very practical and I wish I had paid more attention to it whe
 │   │   ├── OtherMappings.cs
 │   │   ├── OtherMappings.cs
 │   │   ├── OtherMappings.cs
-
+```
 
 **With CQRS:**
 
+```
 ├── src
 │   ├── Products
 │   │   ├── Commands
@@ -95,7 +98,7 @@ CQRS in my view is very practical and I wish I had paid more attention to it whe
 │   │   |   |   ├── GetProductsQueryHandler.cs
 │   │   |   |   ├── GetProductsValidator.cs
 │   │   |   |   ├── GetProductsResponse.cs
-
+```
 
 The first version requires jumping around the solution. The CQRS version has allthe related code nexrt to each other. Much neater in my opinion. 
 
