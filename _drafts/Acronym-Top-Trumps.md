@@ -3,7 +3,9 @@ layout: post
 title: Acronym Top Trumps For .NET Developers
 --- 
 
-After spending a few years coding in the .NET space you will invariably collect enough acronyms to fill a can of Alphabet soup. Some play nice together, however at times you have to choose one acronym based methodology over another. This article will break down the most common acronyms, and rank them in terms of: 
+After spending a few years coding in the .NET space you will invariably collect enough acronyms to fill a can of Alphabet soup! Some play nice together, however at times you have to choose one acronym based methodology over another. 
+
+This article will break down the most common acronyms, and rank them in terms of: 
  - Usefullness (is it super valuable to know, or can you live without it)
  - Simplicity (how easy is it to explain it to somone who is new at coding)
  - Co-operation (how well does it play with the other acronyms)
@@ -100,13 +102,22 @@ CQRS in my view is very practical and I wish I had paid more attention to it whe
 │   │   |   |   ├── GetProductsResponse.cs
 ```
 
-The first version requires jumping around the solution. The CQRS version has allthe related code nexrt to each other. Much neater in my opinion. 
+The first version requires jumping around the solution to update the various moving parts. The CQRS version has all the related code next to each other. Much neater in my opinion, and the single responsibilityness (totally a word) means that your code is far less brittle. 
+
 
  |Category       |Score | Note                                                                          |
  |---------------|------|-------------------------------------------------------------------------------|
  | Usefullness   | 10   | What seams like a repeat often isn't if the context is different              |
  | Simplicity    | 2    | Bit of a learning curve. More files/classes needed                            |
- | Co-operation  | 9    | Ticks the S and D of solid, SOC is achieved but withought creating distance   |
+ | Co-operation  | 9    | Ticks the S and D of solid, SOC is achieved but without creating distance   |
 
 
- ## DDD (Domain Driven Design)
+## DDD (Domain Driven Design)
+
+There are sooooooo many parts to DDD... ubiqitus language, bounded contexts, entity classes having behavoir as well as state, aggregate roots, domain events and things like microservices and require a lot of this stuff. Working with an ORM like Entity Framework requires not only learning how to implement DDD but also some quirks to make things work in your ORM of choice. 
+
+ |Category       |Score | Note                                                                          |
+ |---------------|------|-------------------------------------------------------------------------------|
+ | Usefullness   | 5    | Parts of it are useful in most scenarios but not necessarilly everything      |
+ | Simplicity    | 1    | Lots of different parts to it, a lot to learn and understand                  |
+ | Co-operation  | 9    | Ticks the S and D of solid, SOC is achieved but without creating distance     |
