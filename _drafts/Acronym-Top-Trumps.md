@@ -32,7 +32,7 @@ This article will break down the most common acronyms, and rank them in terms of
 
 ## SOLID (Single responsibility, something, something, Dependancy Inversion)
 
- If were honest the letters in the SOLID acronym are not created equal. The Open-Closed principle, the Liskov Substitution principle and Interface Segregation principle are all well and good. If you want to write testable code though, your need to implement the Dependancy Inversion principle. If you want to prevent changes causing knock-on effects, you need to implement the single-Responsibility principle. 
+ If were honest the letters in the SOLID acronym are not created equal. The Open-Closed principle, the Liskov Substitution principle and Interface Segregation principle are all well and good. If you want to write testable code though, your need to implement the Dependancy Inversion principle. If you want to prevent changes causing knock-on effects, you need to implement the Single-Responsibility principle. 
 
  |Category       |Score |Note                                                                      |
  |---------------|------|--------------------------------------------------------------------------|
