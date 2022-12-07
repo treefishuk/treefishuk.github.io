@@ -87,19 +87,20 @@ CQRS in my view is very practical and I wish I had paid more attention to it whe
 
 ```
 ├── src
-│   ├── Products
-│   │   ├── Commands
-│   │   |   ├── UpdateProduct
-│   │   |   |   ├── UpdateProductCommand.cs
-│   │   |   |   ├── UpdateProductCommandHandler.cs
-│   │   |   |   ├── UpdateProductsValidator.cs
-│   │   |   |   ├── UpdateProductResponse.cs
-│   │   ├── Queries
-│   │   |   ├── GetProducts
-│   │   |   |   ├── GetProductsQuery.cs
-│   │   |   |   ├── GetProductsQueryHandler.cs
-│   │   |   |   ├── GetProductsValidator.cs
-│   │   |   |   ├── GetProductsResponse.cs
+│   ├── Features
+│   │   ├── Products
+│   │   │   ├── Commands
+│   │   │   |   ├── UpdateProduct
+│   │   │   |   |   ├── UpdateProductCommand.cs
+│   │   │   |   |   ├── UpdateProductCommandHandler.cs
+│   │   │   |   |   ├── UpdateProductsValidator.cs
+│   │   │   |   |   ├── UpdateProductResponse.cs
+│   │   │   ├── Queries
+│   │   │   |   ├── GetProducts
+│   │   │   |   |   ├── GetProductsQuery.cs
+│   │   │   |   |   ├── GetProductsQueryHandler.cs
+│   │   │   |   |   ├── GetProductsValidator.cs
+│   │   │   |   |   ├── GetProductsResponse.cs
 ```
 
 The first version requires jumping around the solution to update the various moving parts. The CQRS version has all the related code next to each other. Much neater in my opinion, and the single responsibilityness (totally a word) means that your code is far less brittle. 
