@@ -36,7 +36,7 @@ This article will break down the most common acronyms, and rank them in terms of
 
  |Category       |Score |Note                                                                      |
  |---------------|------|--------------------------------------------------------------------------|
- | Usefullness   | 5    | If it was just the "D" of SOLID then it would be 10.                     |
+ | Usefullness   | 7    | If it was just the "D" of SOLID then it would be 10.                     |
  | Simplicity    | 2    | Each part is quite complex and needs working code examples               |
  | Co-operation  | 7    | The "S" is pretty much the same as SOC. Mostly plays well with others    |
 
@@ -106,19 +106,47 @@ CQRS in my view is very practical and I wish I had paid more attention to it whe
 The first version requires jumping around the solution to update the various moving parts. The CQRS version has all the related code next to each other. Much neater in my opinion, and the single responsibilityness (totally a word) means that your code is far less brittle. 
 
 
- |Category       |Score | Note                                                                          |
- |---------------|------|-------------------------------------------------------------------------------|
- | Usefullness   | 10   | What seams like a repeat often isn't if the context is different              |
- | Simplicity    | 2    | Bit of a learning curve. More files/classes needed                            |
- | Co-operation  | 9    | Ticks the S and D of solid, SOC is achieved but without creating distance   |
+ |Category       |Score | Note                                                                                   |
+ |---------------|------|----------------------------------------------------------------------------------------|
+ | Usefullness   | 10   | Big fan of this one                                                                    |
+ | Simplicity    | 2    | Bit of a learning curve. More files/classes needed                                     |
+ | Co-operation  | 9    | Ticks the S and D of solid, SOC is achieved but without creating unneccessary distance |
 
 
 ## DDD (Domain Driven Design)
 
 There are sooooooo many parts to DDD... ubiqitus language, bounded contexts, entity classes having behavoir as well as state, aggregate roots, domain events and things like microservices and require a lot of this stuff. Working with an ORM like Entity Framework requires not only learning how to implement DDD but also some quirks to make things work in your ORM of choice. 
 
- |Category       |Score | Note                                                                          |
- |---------------|------|-------------------------------------------------------------------------------|
- | Usefullness   | 5    | Parts of it are useful in most scenarios but not necessarilly everything      |
- | Simplicity    | 1    | Lots of different parts to it, a lot to learn and understand                  |
- | Co-operation  | 9    | Ticks the S and D of solid, SOC is achieved but without creating distance     |
+ |Category       |Score | Note                                                                             |
+ |---------------|------|----------------------------------------------------------------------------------|
+ | Usefullness   | 5    | Parts of it are useful in most scenarios but not necessarilly everything         |
+ | Simplicity    | 1    | Lots of different parts to it, a lot to learn and understand                     |
+ | Co-operation  | 9    | Plays extremely well with others becuase its focussed mostly at the entity level |
+
+
+## TDD (Test Driven Development)
+
+Writting good tests is important. Test driven development put the tests up front and center as opposed to having them as an afterthought.  
+
+|Category       |Score | Note                                                                             |
+|---------------|------|----------------------------------------------------------------------------------|
+| Usefullness   | 4    | Can feel at times like you are writting tets for the sake of it that have little or no value |
+| Simplicity    | 10   | Simple to explain. i.e write the test first |
+| Co-operation  | 10   | If your code is a big ball of mud and you haven't implemented dependancy inversion/injection, it will ne near impossible to implement. As tests will need mocks. |
+
+
+## AAA (Arange, Act, Assert)
+
+Used in TDD (above) and in tests generaly, this acronym explains how to structure a test. Really practical and incredibly simple. 
+
+ |Category       |Score | Note                                                                             |
+ |---------------|------|----------------------------------------------------------------------------------|
+ | Usefullness   | 6    | The defacto way to structure tests.                                              |
+ | Simplicity    | 10   | Super easy to understand                                                         |
+ | Co-operation  | 10   | 100% compatible with everything else                                             |
+
+## Results
+
+I think it will be a while before Top Trumps make this into a game... 
+
+If they do though and you have AAA in your hand, you'll be laghing.
