@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: Addressing pain points of CI/CD for Databases: Part 1
+title: Addressing pain points of CI/CD for Databases - Part 1
 --- 
 
 Getting a CI/CD pipeline in place for web apps in Azure devops is easy peasy. Unfortuantly web apps often rely on these pesky things called "databases"... which are far less easy to get integrated and have multiple approaches of how to integrate them.
