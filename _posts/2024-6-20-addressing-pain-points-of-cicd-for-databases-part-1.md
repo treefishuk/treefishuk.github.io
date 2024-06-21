@@ -3,14 +3,14 @@ layout: post
 title: Addressing pain points of CI/CD for Databases - Part 1
 --- 
 
-Getting a CI/CD pipeline in place for web apps in Azure devops is easy peasy. Unfortuantly web apps often rely on these pesky things called "databases"... which are far less easy to get integrated and have multiple approaches of how to integrate them.
+Getting a CI/CD pipeline in place for web apps in Azure devops is easy-peasy. Unfortunately web apps often rely on these pesky things called "databases"... which are far less easy to get integrated and have multiple approaches of how to integrate them.
 
-I wen't through a bit of an ordeal setting up database deployments for the [churchee](https://churchee.com) solution I'm working on. If you're reading this hopefully the pain I experianced will save you some!
+I went through a bit of an ordeal setting up database deployments for the [churchee](https://churchee.com) solution I'm working on. If you're reading this hopefully the pain I experienced will save you some!
 
-I'm splitting all the stuff I came accross into two parts.
+I'm splitting all the stuff I came across into two parts.
 
-- **Part 1:** (this part) is going to cover the problems and solutions I came accross when working on the build pipeline.
-- **Part 2** is going to cover the problems and solutions I came accross when working on the release pipeline.
+- **Part 1:** (this part) is going to cover the problems and solutions I came across when working on the build pipeline.
+- **Part 2** is going to cover the problems and solutions I came across when working on the release pipeline.
 
 ## Chosen Approach
 
@@ -20,7 +20,7 @@ The options I considered were:
 - Flyway Migrations
 - Database Model (Database Project in Visual Studio)
 
-I decided I wasn't a fan of EF Core migrations and I didn't like the idea of having to remember to fireup an additional tool outside Visual Studio. So I settled on the "Database Model", created a Database project based of the Database EF core had generated for my web app. Checked it in. Bosh.
+I decided I wasn't a fan of EF Core migrations and I didn't like the idea of having to remember to fire-up an additional tool outside Visual Studio. So I settled on the "Database Model", created a Database project based of the Database EF core had generated for my web app. Checked it in. Bosh.
 
 ## Problem 1: So what about when things change?
 
@@ -32,7 +32,7 @@ I decided the best thing to do, would be as part of the CI build to generate a d
 
 ## Problem 2: Where to put the EF Core Generated Database
 
-I could have created a database in Azure for the compare, but spining up databases in Azure I have found to be pretty slow, and even if it doesn't exist for long, while it does exist it cost pennies. 
+I could have created a database in Azure for the compare, but spinning up databases in Azure I have found to be pretty slow, and even if it doesn't exist for long, while it does exist it cost pennies. 
 
 ### Solution
 
@@ -76,7 +76,7 @@ SqlPackage itself is not on the "ubuntu-latest" agent, and honestly trying to wo
 
 ### Solution
 
-Installing SQLPackage on the "ubuntu-latest" agent using powershell was super easy:
+Installing SQLPackage on the "ubuntu-latest" agent using Powershell was super easy:
 
 ```
 sudo dotnet tool install -g microsoft.sqlpackage
@@ -84,7 +84,7 @@ sudo dotnet tool install -g microsoft.sqlpackage
 
 ## Problem 5: Easily knowing what went wrong
 
-So with the EF Core generated database being published to a SQL Docker container, I could use the powershell installed sqlpackage to generate a deploy report using the .dacpac created with the project referencing the database project. But how do I get that from a SQlPackage Deploy report into a format that's useful, and can pass or fail the build if discrepancies are found?
+So with the EF Core generated database being published to a SQL Docker container, I could use the Powershell installed SQLPackage to generate a deploy report using the .dacpac created with the project referencing the database project. But how do I get that from a SQLPackage Deploy report into a format that's useful, and can pass or fail the build if discrepancies are found?
 
 ### Solution
 
