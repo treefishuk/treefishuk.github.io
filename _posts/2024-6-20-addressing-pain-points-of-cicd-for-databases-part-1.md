@@ -53,7 +53,7 @@ The tool I wanted to use to compare the DB Project and the EF Generated DB was t
 
 ### Solution
 
-Eventually I came accross this article: https://jmezach.github.io/post/introducing-msbuild-sdk-sqlproj/. Which mentions creating a second project which an SDK type of "MSBuild.Sdk.SqlProj" which references the .sql files in the database project to build the .dacpac. So the project looks something like this:
+Eventually I came accross [this article](https://jmezach.github.io/post/introducing-msbuild-sdk-sqlproj). Which mentions creating a second project which an SDK type of "MSBuild.Sdk.SqlProj" which references the .sql files in the database project to build the .dacpac. So the project looks something like this:
 
 ```
 <Project Sdk="MSBuild.Sdk.SqlProj/2.7.2">
@@ -68,11 +68,11 @@ Eventually I came accross this article: https://jmezach.github.io/post/introduci
 </Project>
 ```
 
-And yep. Worked a treat! The .dacpac is successfully build using the "ubuntu-latest" agent.
+And yep. Worked a treat! The .dacpac is successfully built using the "ubuntu-latest" agent.
 
 ## Problem 4: No SqlPackage.exe
 
-SqlPackage itself is not on the "ubuntu-latest" agent, and honestly trying to work out the location on a windows build agent was hard work!
+Its hard enough trying to work out the location for SqlPackage on a windows build agent. On "ubuntu-latest" agent it's not there at all!.
 
 ### Solution
 
