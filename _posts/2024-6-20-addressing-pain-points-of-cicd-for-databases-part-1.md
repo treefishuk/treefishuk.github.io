@@ -16,7 +16,7 @@ I'm splitting all the stuff I came across into two parts.
 
 The options I considered were:
 
-- Ef Core Migrations
+- EF Core Migrations
 - Flyway Migrations
 - Database Model (Database Project in Visual Studio)
 
@@ -49,7 +49,7 @@ Here's the YAML:
 
 ## Problem 3: The ubuntu-latest agent can't build SQL Database projects (.sqlproj)
 
-The tool I wanted to use to compare the DB Project and the EF Generated DB was SqlPackage and the run a [Deploy Report](https://learn.microsoft.com/en-us/sql/tools/sqlpackage/sqlpackage-deploy-drift-report?view=sql-server-ver16). The "ubuntu-latest" agent though cant build can't build SQL Database projects (.sqlproj).
+The tool I wanted to use to compare the DB Project and the EF Generated DB was the [Deploy Report](https://learn.microsoft.com/en-us/sql/tools/sqlpackage/sqlpackage-deploy-drift-report?view=sql-server-ver16) task that can be executed using SqlPackage. The "ubuntu-latest" agent though cant build can't build SQL Database projects (.sqlproj).
 
 ### Solution
 
