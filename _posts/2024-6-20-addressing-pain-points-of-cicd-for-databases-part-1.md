@@ -3,7 +3,7 @@ layout: post
 title: Addressing pain points of CI/CD for Databases - Part 1
 --- 
 
-Getting a CI/CD pipeline in place for web apps in Azure devops is easy-peasy. Unfortunately web apps often rely on these pesky things called "databases"... which are far less easy to get integrated and have multiple approaches of how to integrate them.
+Getting a CI/CD pipeline in place for web apps in Azure DevOps is easy. Unfortunately, web apps often rely on these pesky things called "databases"... which are far less easy to integrate and have multiple integration approaches.
 
 I went through a bit of an ordeal setting up database deployments for the [churchee](https://churchee.com) solution I'm working on. If you're reading this hopefully the pain I experienced will save you some!
 
@@ -20,19 +20,19 @@ The options I considered were:
 - Flyway Migrations
 - Database Model (Database Project in Visual Studio)
 
-I decided I wasn't a fan of EF Core migrations and I didn't like the idea of having to remember to fire-up an additional tool outside Visual Studio. So I settled on the "Database Model", created a Database project based of the Database EF core had generated for my web app. Checked it in. Bosh.
+I decided I wasn't a fan of EF Core migrations and I didn't like the idea of having to remember to fire up an additional tool outside Visual Studio. So I settled on the "Database Model", and created a Database project based on the Database EF core had generated for my web app. Checked it in. Bosh.
 
 ## Problem 1: So what about when things change?
 
-Pretty obvious problem to begin with, in that as soon as a new property on an entity class or an new entity class is added, the database project no longer matches what EF Core expects. "Just remember to sync it"... didn't seem like a good plan, as frankly, I'm forgetful! 
+Pretty obvious problem to begin with, in that as soon as a new property on an entity class or a new entity class is added, the database project no longer matches what EF Core expects. "Just remember to sync it"... didn't seem like a good plan, as frankly, I'm forgetful! 
 
 ### Solution
 
-I decided the best thing to do, would be as part of the CI build to generate a database with EF Core and then compare that database with the database project to make sure everything is in sync and to fail it if EF Core expects columns, tables etc. not in the DB project.
+I decided the best thing to do, would be as part of the CI build to generate a database with EF Core and then compare that database with the database project to make sure everything is in sync and to fail it if EF Core expects columns, tables, etc. not in the DB project.
 
 ## Problem 2: Where to put the EF Core Generated Database
 
-I could have created a database in Azure for the compare, but spinning up databases in Azure I have found to be pretty slow, and even if it doesn't exist for long, while it does exist it cost pennies. 
+I could have created a database in Azure for the comparison, but spinning up databases in Azure I have found to be pretty slow, and even if it doesn't exist for long, while it does exist it costs pennies. 
 
 ### Solution
 
@@ -53,7 +53,7 @@ The tool I wanted to use to compare the DB Project and the EF Generated DB was t
 
 ### Solution
 
-Eventually I came accross [this article](https://jmezach.github.io/post/introducing-msbuild-sdk-sqlproj). Which mentions creating a second project which an SDK type of "MSBuild.Sdk.SqlProj" which references the .sql files in the database project to build the .dacpac. So the project looks something like this:
+Eventually, I came across [this article](https://jmezach.github.io/post/introducing-msbuild-sdk-sqlproj). This mentions creating a second project which has an SDK type of "MSBuild.Sdk.SqlProj" which references the .sql files in the database project to build the .dacpac. So the project looks something like this:
 
 ```
 <Project Sdk="MSBuild.Sdk.SqlProj/2.7.2">
@@ -72,7 +72,7 @@ And yep. Worked a treat! The .dacpac is successfully built using the "ubuntu-lat
 
 ## Problem 4: No SqlPackage.exe
 
-Its hard enough trying to work out the location for SqlPackage on a windows build agent. On "ubuntu-latest" agent it's not there at all!.
+It's hard enough trying to work out the location for SqlPackage on a Windows build agent. On "ubuntu-latest" agent it's not there at all!.
 
 ### Solution
 
@@ -88,7 +88,7 @@ So with the EF Core generated database being published to a SQL Docker container
 
 ### Solution
 
-I decided to create an XSLT to transform the SQLPackage deploy report into a JUnit xml format. Turns out if you need to do something like this Chat GPT is really useful. Here's that code that Chat GPT helped me to put together:
+I decided to create an XSLT to transform the SQLPackage deploy report into a JUnit XML format. Turns out that if you need to do something like this Chat GPT is really useful. Here's the code that ChatGPT helped me to put together:
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -141,4 +141,4 @@ I decided to create an XSLT to transform the SQLPackage deploy report into a JUn
 
 ## More Problems and Solutions in Part 2
 
-So at this point the build pipeline is generating a .dacpac. If the Database project goes out of sync with EF Core, the build fails and the "tests" tab on the build shows each of the discrepancies found. After all this the database still hasn't been deployed though, so check out part 2 for more problems, pain and work arounds! To the release pipeline!
+So at this point, the build pipeline is generating a .dacpac. If the Database project goes out of sync with EF Core, the build fails and the "tests" tab on the build shows each of the discrepancies found. After all this the database still hasn't been deployed though, so check out part 2 for more problems, pain, and workarounds! To the release pipeline!
