@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hi! I'm Jon, a .Net Web Developer, Church Leader and Ethical Certified Hacker.
+Hi! I'm Jon, a .Net Web Developerm and Church Leader.
 
 If you have stumbled onto this blog hopefully you will find something useful for you!
 
